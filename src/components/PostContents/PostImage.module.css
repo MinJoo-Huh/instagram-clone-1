@@ -7,18 +7,29 @@
 }
 
 .postImage {
-  padding: 10px;
-  width: 500px;
-  height: 520px;
+  /* padding: 10px; */
+  width: 480px;
+  height: 500px;
+  display: flex;
+  /* justify-content: center; */
+  margin: 10px;
   position: relative;
   text-align: center;
 }
 
-.postImage img {
+.showImage {
+  display: flex;
   width: 480px;
   height: 500px;
   border-radius: 3px;
-  /* background-color: pink; */
+  overflow: hidden;
+  border: 1px lightgray solid;
+}
+.postImage img {
+  width: 480px;
+  height: 500px;
+  flex-shrink: 0; /*영역 넘는 부분을 shirink 비율마다 줄여준다. 0: 원상태 그대로 (줄임X)*/
+  /* margin: 0 10px; */
 }
 
 .postImage button {
@@ -42,10 +53,15 @@
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.beforeImageButton {
+.prevImageButton {
   left: 20px;
 }
 
-.afterImageButton {
+.nextImageButton {
   right: 20px;
+}
+
+.prevImageButton:hover,
+.nextImageButton:hover {
+  cursor: pointer;
 }

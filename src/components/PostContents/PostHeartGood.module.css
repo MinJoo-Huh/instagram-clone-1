@@ -26,3 +26,24 @@
   display: flex;
   justify-content: right;
 }
+
+.messageIcon {
+  transform: scaleX(-1);
+}
+
+.shareIcon {
+  transform: rotate(20deg);
+}
+
+.messageIcon:hover,
+.shareIcon:hover {
+  opacity: 0.5;
+}
+
+/* mouse 계속 클릭하고 있는 상태 */
+.heartIcon:active,
+.messageIcon:active,
+.shareIcon:active,
+.bookmarkIcon:active {
+  opacity: 0.3;
+}
