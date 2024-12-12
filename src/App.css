@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+}
+
+nav {
+  width: 250px;
+  height: 100vh;
+  border-right: 1px solid #dbdbdb;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+main {
+  display: flex;
+  margin: 0 auto;
+  gap: 70px;
+  padding: 20px 0 20px 230px;
+}
+
+.post-area {
+  width: 600px;
+}
+
+.recommendation-area {
+  width: 320px;
+  margin-top: 18px;
+}
