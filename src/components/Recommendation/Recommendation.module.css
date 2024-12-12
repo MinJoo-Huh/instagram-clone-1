@@ -1,0 +1,83 @@
+.recommendation {
+  width: 320px;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.recommendation__more-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recommendation__more-text {
+  opacity: 0.6;
+  font-weight: bold;
+}
+
+.recommendation__more-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.recommendation__more-btn:hover {
+  opacity: 0.6;
+}
+
+.recommendation__user-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.recommendation__user-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.recommendation__user-image-box {
+  width: 44px;
+}
+
+.recommendation__user-image-box img {
+  width: 100%;
+  display: block;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.recommendation__user-info {
+  width: 185px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+
+.recommendation__user-id {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.recommendation__user-follow-count {
+  opacity: 0.6;
+  font-size: 12px;
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 1px;
+}
+
+.recommendation__user-follow-btn {
+  border: none;
+  background: transparent;
+  color: #4294ef;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.recommendation__user-follow-btn:hover {
+  color: #143667;
+}

@@ -1,0 +1,17 @@
+.heart-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 24px;
+  transition: transform 0.2s;
+}
+
+.heart-icon:hover {
+  transform: scale(1.2);
+}
+
+.heart-icon__emoji {
+  font-size: 24px;
+  transition: color 0.2s;
+}

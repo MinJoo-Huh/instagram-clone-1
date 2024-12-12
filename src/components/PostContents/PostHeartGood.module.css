@@ -1,0 +1,49 @@
+.postHeartGood {
+  padding: 2px 5px 0 2px;
+  width: 500px;
+  height: 520px;
+
+  position: relative;
+  text-align: center;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.postHeartGood img {
+  width: 28px;
+  height: 28px;
+}
+
+.leftIcons {
+  width: 120px;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.rightIcon {
+  display: flex;
+  justify-content: right;
+}
+
+.messageIcon {
+  transform: scaleX(-1);
+}
+
+.shareIcon {
+  transform: rotate(20deg);
+}
+
+.messageIcon:hover,
+.shareIcon:hover {
+  opacity: 0.5;
+}
+
+/* mouse 계속 클릭하고 있는 상태 */
+.heartIcon:active,
+.messageIcon:active,
+.shareIcon:active,
+.bookmarkIcon:active {
+  opacity: 0.3;
+}
