@@ -1,0 +1,14 @@
+#postImage {
+  position: relative;
+  width: 700px;
+  height: 350px;
+  /* background-color: pink; */
+}
+
+button.beforeImage {
+  position: relative;
+}
+
+button.afterImage {
+  position: relative;
+}
