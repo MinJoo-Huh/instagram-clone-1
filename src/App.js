@@ -1,5 +1,7 @@
 import Carousel from './components/Carousel/Carousel';
 import Profile from './components/Profile/Profile';
+import PostImage from './components/PostContents/PostImage';
+import PostHeartGood from './components/PostContents/PostHeartGood';
 import './App.css';
 
 const App = () => {
@@ -9,6 +11,8 @@ const App = () => {
       <main>
         <div className='post-area'>
           <Carousel />
+          <PostImage />
+          <PostHeartGood />
         </div>
         <div className='recommendation-area'>
           <Profile />
