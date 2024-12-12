@@ -2,7 +2,7 @@ import Carousel from './components/Carousel/Carousel';
 import Profile from './components/Profile/Profile';
 import PostImage from './components/PostContents/PostImage';
 import PostHeartGood from './components/PostContents/PostHeartGood';
-import './App.css';
+import './app.css';
 
 const App = () => {
   return (
