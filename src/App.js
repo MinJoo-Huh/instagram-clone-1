@@ -1,5 +1,5 @@
-import Carousel from './components/Carousel';
-import Profile from './components/Profile';
+import Carousel from './components/Carousel/Carousel';
+import Profile from './components/Profile/Profile';
 import './App.css';
 
 const App = () => {
