@@ -1,5 +1,5 @@
 import styles from './Profile.module.css';
-import Recommendation from './Recommendation';
+import Recommendation from '../Recommendation/Recommendation';
 
 const Profile = () => {
   return (

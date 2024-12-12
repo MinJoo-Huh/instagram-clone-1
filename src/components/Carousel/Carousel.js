@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import styles from './Carousel.module.css';
-import userData from '../userData.js';
+import userData from '../../userData.js';
 
 const Carousel = () => {
   const [scrollInfo, setScrollInfo] = useState({

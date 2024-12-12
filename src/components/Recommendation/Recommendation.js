@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import userData from '../userData';
+import userData from '../../userData';
 import styles from './Recommendation.module.css';
 
 const Recommendation = () => {
