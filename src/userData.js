@@ -1,0 +1,26 @@
+const userData = [
+  { id: 'apple_man', url: 'https://placehold.co/400', follow: 123 },
+  { id: 'xx_xxx', url: 'https://placehold.co/400', follow: 11 },
+  { id: 'asdasdasd', url: 'https://placehold.co/400', follow: 13 },
+  { id: 'super_coding', url: 'https://placehold.co/400', follow: 111 },
+  { id: 'apple_coding', url: 'https://placehold.co/400', follow: 32 },
+  { id: 'hell_o', url: 'https://placehold.co/400', follow: 322 },
+  { id: 'test_123', url: 'https://placehold.co/400', follow: 1111 },
+  { id: 'xxxxxxx', url: 'https://placehold.co/400', follow: 1 },
+  { id: 'kiwi_like', url: 'https://placehold.co/400', follow: 4 },
+  { id: 'hihihihi', url: 'https://placehold.co/400', follow: 12 },
+  { id: 'qqqowee11', url: 'https://placehold.co/400', follow: 153 },
+  { id: 'avnvzzsld', url: 'https://placehold.co/400', follow: 53 },
+  { id: 'ovj_111123', url: 'https://placehold.co/400', follow: 10 },
+  { id: 'aakcoc_aks', url: 'https://placehold.co/400', follow: 1553 },
+  { id: 'aoq231_123', url: 'https://placehold.co/400', follow: 163 },
+  { id: 'aaaaaaa', url: 'https://placehold.co/400', follow: 888 },
+  { id: 'asdasd', url: 'https://placehold.co/400', follow: 953 },
+  { id: 'asdasdasdad', url: 'https://placehold.co/400', follow: 103 },
+  { id: '1112', url: 'https://placehold.co/400', follow: 203 },
+  { id: 'name', url: 'https://placehold.co/400', follow: 100 },
+  { id: 'hello', url: 'https://placehold.co/400', follow: 742 },
+  { id: '110aksdnq', url: 'https://placehold.co/400', follow: 9 },
+];
+
+export default userData;

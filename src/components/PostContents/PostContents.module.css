@@ -1,16 +1,5 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fafafa;
-  height: 100vh;
-}
-
 .post_container {
-  width: 400px;
+  width: 502px;
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;

@@ -1,12 +1,14 @@
-import React, { useState } from "react";
-import classes from "./PostContents.module.css";
+import React, { useState } from 'react';
+import classes from './PostContents.module.css';
+import PostImage from './PostImage';
+import HeartIcon from '../Navigation/HeartIcon';
 
 const PostContents = () => {
   // 좋아요 상태
   const [likes, setLikes] = useState(7);
   const [isMenuOpen, setIsMenuOpen] = useState(false); // 메뉴 상태
   const [comments, setComments] = useState([]); // 댓글 상태
-  const [commentText, setCommentText] = useState(""); // 댓글 입력 상태
+  const [commentText, setCommentText] = useState(''); // 댓글 입력 상태
 
   // 좋아요 버튼 클릭 시 상태 변경
   const handleLikeClick = () => {
@@ -16,21 +18,16 @@ const PostContents = () => {
   // 댓글 추가 기능
   const handleAddComment = () => {
     if (commentText.trim()) {
-      setComments((prevComments) => [
-        ...prevComments,
-        { text: commentText, id: new Date().toISOString() },
-      ]);
-      setCommentText(""); // 댓글 입력 필드 초기화
+      setComments((prevComments) => [...prevComments, { text: commentText, id: new Date().toISOString() }]);
+      setCommentText(''); // 댓글 입력 필드 초기화
     } else {
-      alert("댓글을 입력하세요!");
+      alert('댓글을 입력하세요!');
     }
   };
 
   // 댓글 삭제 기능
   const handleDeleteComment = (id) => {
-    setComments((prevComments) =>
-      prevComments.filter((comment) => comment.id !== id)
-    );
+    setComments((prevComments) => prevComments.filter((comment) => comment.id !== id));
   };
 
   // 메뉴 열기/닫기 기능
@@ -42,11 +39,7 @@ const PostContents = () => {
     <div className={classes.post_container}>
       {/* 헤더 */}
       <div className={classes.post_header}>
-        <img
-          src="profile.jpg"
-          alt="Profile Picture"
-          className={classes.profile_img}
-        />
+        <img src='profile.jpg' alt='Profile Picture' className={classes.profile_img} />
         <span className={classes.username}>supercoding</span>
         <span className={classes.menu_icon} onClick={toggleMenu}>
           ⋮
@@ -55,7 +48,8 @@ const PostContents = () => {
 
       {/* 게시물 이미지 */}
       <div className={classes.post_image}>
-        <img src="cake.jpg" alt="Post Image" />
+        <PostImage />
+        {/* <img src='cake.jpg' alt='Post Image' /> */}
       </div>
 
       {/* 아이콘 및 좋아요 */}
@@ -76,26 +70,26 @@ const PostContents = () => {
 
       {/* 댓글 */}
       <div className={classes.comments_section}>
-        <div id="commentsContainer">
+        <div id='commentsContainer'>
           {/* 댓글 리스트 */}
           {comments.map((comment) => (
             <div key={comment.id} className={classes.comment}>
               <span>{comment.text}</span>
-              <button
-                onClick={() => handleDeleteComment(comment.id)}
-                className={classes.delete_comment_button}
-              >
-                삭제
-              </button>
+              <div>
+                <HeartIcon />
+                <button onClick={() => handleDeleteComment(comment.id)} className={classes.delete_comment_button}>
+                  삭제
+                </button>
+              </div>
             </div>
           ))}
         </div>
         <div className={classes.add_comment}>
           <input
-            type="text"
+            type='text'
             value={commentText}
             onChange={(e) => setCommentText(e.target.value)}
-            placeholder="댓글을 입력하세요..."
+            placeholder='댓글을 입력하세요...'
           />
           <button onClick={handleAddComment}>게시</button>
         </div>
