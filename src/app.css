@@ -1,9 +1,21 @@
+.container {
+  display: flex;
+}
+
+nav {
+  width: 250px;
+  height: 100vh;
+  border-right: 1px solid #dbdbdb;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 main {
   display: flex;
-  justify-content: center;
-  gap: 60px;
-  margin: 30px 0;
-  padding-left: 230px;
+  margin: 0 auto;
+  gap: 70px;
+  padding: 20px 0 20px 230px;
 }
 
 .post-area {

@@ -4,7 +4,7 @@ import PostImage from './components/PostContents/PostImage';
 import PostHeartGood from './components/PostContents/PostHeartGood';
 import PostContents from './components/PostContents/PostContents';
 import Sidebar from './components/Navigation/Sidebar';
-import './app.css';
+import './App.css';
 
 const App = () => {
   return (
