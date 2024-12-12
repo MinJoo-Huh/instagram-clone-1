@@ -3,6 +3,7 @@
   height: 95px;
   position: relative;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .carousel-container {
