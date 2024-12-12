@@ -2,7 +2,7 @@ import Carousel from './components/Carousel/Carousel';
 import Profile from './components/Profile/Profile';
 import PostContents from './components/PostContents/PostContents';
 import Sidebar from './components/Navigation/Sidebar';
-import './App.css';
+import './app.css';
 
 const App = () => {
   return (
