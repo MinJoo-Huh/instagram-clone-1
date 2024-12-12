@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "GOSEONGGEUMGANGNURI";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GOSEONGGEUMGANGNURI.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.postImage {
+  /* padding: 10px; */
+  width: 480px;
+  height: 500px;
+  display: flex;
+  /* justify-content: center; */
+  margin: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.showImage {
+  display: flex;
+  width: 480px;
+  height: 500px;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px lightgray solid;
+}
+.postImage img {
+  width: 480px;
+  height: 500px;
+  flex-shrink: 0; /*영역 넘는 부분을 shirink 비율마다 줄여준다. 0: 원상태 그대로 (줄임X)*/
+  /* margin: 0 10px; */
+}
+
+.postImage button {
+  position: absolute;
+  top: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 23px;
+  height: 23px;
+
+  font-size: medium;
+  font-family: "GOSEONGGEUMGANGNURI";
+  color: rgba(0, 0, 0, 0.4);
+
+  border: none;
+  border-radius: 25px;
+
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.prevImageButton {
+  left: 20px;
+}
+
+.nextImageButton {
+  right: 20px;
+}
+
+.prevImageButton:hover,
+.nextImageButton:hover {
+  cursor: pointer;
+}
